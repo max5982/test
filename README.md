@@ -31,4 +31,6 @@ sudo apt-get --no-install-recommends install -y google-chrome-stable
 # OTX
 ```
 sudo apt-get install python3-dev
+pip uninstall mmcv
+pip install mmcv-full
 ```
