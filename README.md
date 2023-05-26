@@ -34,3 +34,11 @@ sudo apt-get install python3-dev
 pip uninstall mmcv
 pip install mmcv-full
 ```
+
+
+# Python VENV
+```
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install --upgrade pip
+```
