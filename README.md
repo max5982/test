@@ -45,6 +45,8 @@ python -m pip install --upgrade pip
 
 # NVIDIA GPU installation on Ubuntu
 ```
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions
+
 sudo apt autoremove nvidia* --purge
 sudo /usr/bin/nvidia-uninstall
 sudo /usr/local/cuda-X.Y/bin/cuda-uninstall
