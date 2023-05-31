@@ -45,6 +45,16 @@ python -m pip install --upgrade pip
 
 # NVIDIA GPU installation on Ubuntu
 ```
+sudo apt remove --purge nvidia-*
+sudo apt remove --purge cuda-*
+rm -rf /usr/local/cuda*
+/usr/bin/nvidia-uninstall
+sudo /usr/bin/nvidia-uninstall
+   
+sudo ubuntu-drivers devices
+sudo apt install nvidia-driver-530-open
+```
+```
 sudo apt install pkg-config libglvnd-dev build-essencial
 
 
