@@ -45,6 +45,9 @@ python -m pip install --upgrade pip
 
 # NVIDIA GPU installation on Ubuntu
 ```
+sudo apt install pkg-config libglvnd-dev build-essencial
+
+
 https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions
 https://docs.nvidia.com/cuda/archive/11.8.0/cuda-installation-guide-linux/index.html
 
