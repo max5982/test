@@ -31,8 +31,13 @@ sudo apt-get --no-install-recommends install -y google-chrome-stable
 # OTX
 ```
 sudo apt-get install python3-dev
+
 pip uninstall mmcv
 pip install mmcv-full
+or
+sudo apt install gcc-10 g++-10
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 10
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-10 10
 ```
 
 
