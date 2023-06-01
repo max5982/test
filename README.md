@@ -53,6 +53,9 @@ sudo /usr/bin/nvidia-uninstall
    
 sudo ubuntu-drivers devices
 sudo apt install nvidia-driver-530-open
+sudo apt install nvidia-cuda-toolkit
+
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 ```
 ```
 sudo apt install pkg-config libglvnd-dev build-essencial
