@@ -52,6 +52,21 @@ python -m pip install --upgrade pip
 ```
 sudo apt remove --purge nvidia-*
 sudo apt remove --purge cuda-*
+sudo apt autoremove nvidia* --purge
+sudo rm -rf /usr/local/cuda*
+sudo /usr/bin/nvidia-uninstall
+
+sudo apt install pkg-config libglvnd-dev build-essencial
+
+sudo apt update
+apt-cache search 'nvidia-driver-' | grep '^nvidia-driver-[[:digit:]]*'
+sudo apt install nvidia-driver-515-open
+
+```
+
+```
+sudo apt remove --purge nvidia-*
+sudo apt remove --purge cuda-*
 rm -rf /usr/local/cuda*
 /usr/bin/nvidia-uninstall
 sudo /usr/bin/nvidia-uninstall
