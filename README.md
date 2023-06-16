@@ -27,6 +27,11 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt-get update
 sudo apt-get --no-install-recommends install -y google-chrome-stable
 ```
+* Trouble shooting when chrome does not work on WSL
+```
+export LIBGL_ALWAYS_INDIRECT=1
+export DISPLAY=:0
+```
 
 # OTX
 ```
