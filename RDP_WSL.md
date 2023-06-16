@@ -7,7 +7,9 @@ sudo apt update && sudo apt -y upgrade
 
 * Install a GUI distro to Ubuntu
 ```
-sudo apt-get install -y xfce4 xfce4-goodies
+sudo apt install -y ubuntu-desktop
+sudo apt install -y xfce4
+#sudo apt-get install -y xfce4 xfce4-goodies
 #sudo apt-get install -y kubuntu-desktop
 ```
 Half way through the installation you will be prompt for this configurating sddm, select lightdm
