@@ -22,6 +22,19 @@ sudo sed -i 's/xserverbpp=24/#xserverbpp=24\nxserverbpp=128/g' /etc/xrdp/xrdp.in
 sudo ufw allow from any to any port 3392 proto tcp
 ```
 
+* Open and Edit the location file
+```
+sudo vi /etc/xrdp/startwm.sh
+
+-test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+-exec /bin/sh /etc/X11/Xsession
++# test -x /etc/X11/Xsession && exec /etc/X11/Xsession
++# exec /bin/sh /etc/X11/Xsession
++# xce4
++startxfce4
+```
+  
+
 *  Enable dbus
 ```
 #enable dbus
