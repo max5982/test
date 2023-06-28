@@ -39,6 +39,8 @@ sudo apt-get install python3-dev
 
 pip uninstall mmcv
 pip install mmcv-full
+# For CPU only
+pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.0.0/index.html
 or
 sudo apt install gcc-10 g++-10
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 10
