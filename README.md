@@ -36,6 +36,7 @@ export DISPLAY=:0
 # OTX
 ```
 sudo apt-get install python3-dev
+sudo apt install libgl1-mesa-glx
 
 pip uninstall mmcv
 pip install mmcv-full
