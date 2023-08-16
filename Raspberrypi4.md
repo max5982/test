@@ -1,4 +1,5 @@
 # How to use OpenVINO on Raspberry pi 4
+---
 
 ## Test environment
 - Kernel: Linux raspberrypi 6.1.21-v8+
@@ -6,7 +7,7 @@
 - OpenVINO version: 2023.0.1
 - Device: Raspberry Pi 4 Model B
 
-## How to install OpenVINO
+## Install OpenVINO
 - Create an installation folder for OpenVINO. If the folder already exists, skip this step
 ```
 sudo mkdir -p /opt/intel
@@ -29,8 +30,20 @@ cd /opt/intel
 sudo ln -s openvino_2023.0.1 openvino_2023
 ```
 
-## How to configure the OpenVINO environment
+## Set the OpenVINO environment
 You must update several environment variables before you can compile and run OpenVINO applications. Open a terminal window and run the setupvars.sh script as shown below to temporarily set your environment variables
 ```
 source /opt/intel/openvino_2023/setupvars.sh
+```
+
+## Install OpenVINO development tools
+* Download open_model_zoo repo
+```
+git clone --recurse-submodules https://github.com/openvinotoolkit/open_model_zoo.git
+```
+* Install model tools
+```
+cd open_model_zoo/tools/model_tools
+pip install --upgrade pip
+pip install .
 ```
