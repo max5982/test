@@ -10,6 +10,27 @@ sudo vi /etc/sudoers
 max     ALL=(ALL) NOPASSWD: ALL
 ```
 
+# install required apt packages
+```
+sudo apt install vim git meld terminator build-essential tree htop
+```
+
+# My aliases
+```
+vi ~/.bashrc
+```
+```
+# My aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ....='cd ../../../..'
+alias .....='cd ../../../../..'
+alias ......='cd ../../../../../..'
+alias .......='cd ../../../../../../..'
+alias ........='cd ../../../../../../../..'
+```
+
 # Grub
 /etc/default/grub
 ```
