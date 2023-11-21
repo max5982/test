@@ -36,6 +36,8 @@ alias ........='cd ../../../../../../../..'
 ```
 GRUB_DEFAULT=saved
 GRUB_SAVEDEFAULT="true"
+GRUB_TIMEOUT=3
+#GRUB_TIMEOUT_STYLE=hidden
 ```
 sudo update-grub
 
