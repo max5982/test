@@ -138,3 +138,8 @@ sudo apt install nvidia-driver-xxx
 https://developer.nvidia.com/cuda-11-7-1-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
 https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
 ```
+
+Verify NVIDIA version
+```
+cat /proc/driver/nvidia/version
+```
