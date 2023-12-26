@@ -80,6 +80,17 @@ python -m pip install --upgrade pip
 ```
 
 # NVIDIA GPU installation on Ubuntu
+Disable Nouveau: The open-source Nouveau driver for NVIDIA GPUs should be disabled before installing the proprietary NVIDIA driver. Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following content:
+```
+blacklist nouveau
+options nouveau modeset=0
+```
+Update the kernel initramfs:
+```
+sudo update-initramfs -u
+```
+Reboot your system to apply these changes.
+
 ```
 sudo apt remove --purge nvidia-*
 sudo apt remove --purge cuda-*
