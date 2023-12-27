@@ -12,7 +12,7 @@ max     ALL=(ALL) NOPASSWD: ALL
 
 # install required apt packages
 ```
-sudo apt install vim git meld terminator build-essential tree htop
+sudo apt install vim git meld terminator build-essential tree htop net-tools
 ```
 
 # My aliases
@@ -60,6 +60,14 @@ export DISPLAY=:0
 ```
 sudo apt-get install python3-dev
 sudo apt install libgl1-mesa-glx
+
+pip install -U pip
+pip install wheel
+pip install datumaro[default]
+pip install torch==1.13.1 torchvision==0.14.1 --extra-index-url https://download.pytorch.org/whl/cu117
+pip uninstall mmcv-full
+pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu117/torch1.13.0/index.html
+pip install otx[full]
 
 pip uninstall mmcv
 pip install mmcv-full
