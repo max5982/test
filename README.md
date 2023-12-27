@@ -12,7 +12,8 @@ max     ALL=(ALL) NOPASSWD: ALL
 
 # install required apt packages
 ```
-sudo apt install vim git meld terminator build-essential tree htop net-tools
+sudo apt install -y vim git git-all meld terminator build-essential make cmake gcc tree htop net-tools
+sudo apt install -y software-properties-common python3-dev python3-pip python3-setuptools python3-venv
 ```
 
 # My aliases
