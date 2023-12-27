@@ -61,6 +61,7 @@ export DISPLAY=:0
 ```
 sudo apt-get install python3-dev
 sudo apt install libgl1-mesa-glx
+sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev gcc-multilib dkms mesa-utils
 
 pip install -U pip
 pip install wheel
