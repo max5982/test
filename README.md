@@ -17,10 +17,10 @@ sudo apt install -y software-properties-common python3-dev python3-pip python3-s
 ```
 
 # My aliases
-```
+```sh
 vi ~/.bashrc
 ```
-```
+```sh
 # My aliases
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -150,6 +150,17 @@ https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&D
 ```
 
 Verify NVIDIA version
-```
+```sh
 cat /proc/driver/nvidia/version
+```
+
+# Intel GPU or Nvidia GPU
+1. Install
+```sh
+sudo apt install nvidia-prime
+```
+2. Switching GPU
+```sh
+sudo prime-select intel # use Intel GPU
+sudo prime-select nvidia # use nvidia GPU
 ```
