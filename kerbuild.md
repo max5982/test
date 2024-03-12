@@ -1,5 +1,7 @@
 ## Kernel src download
 ```
+sudo add-apt-repository ppa:canonical-kernel-team/proposed -y
+sudo apt update
 sudo apt-get source linux-source
 sudo apt-cache search linux-source
 sudo apt install <download-src-name>
